@@ -1,6 +1,10 @@
+# General
+
+Base project for new Angular 12 applications. Uses JEST as unit test runner.
+
 # AngularBase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
 ## Development server
 
