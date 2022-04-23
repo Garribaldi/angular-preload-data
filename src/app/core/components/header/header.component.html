@@ -1,0 +1,12 @@
+<div class="header">
+  <ul>
+    <li *ngFor="let page of mainPages">
+      <span>{{ page }}</span>
+    </li>
+  </ul>
+</div>
+<div class="header__nav">
+  <a [routerLink]="['/home']">Home</a>
+  <a [routerLink]="['/home2']">Home 2</a>
+  <a [routerLink]="['/home3']">Home 3</a>
+</div>
