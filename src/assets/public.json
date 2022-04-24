@@ -1,6 +1,8 @@
 [
     {
         "id": "1",
-        "name": "test public"
+        "name": "test public",
+        "url": "home",
+        "destination": null
     }
 ]

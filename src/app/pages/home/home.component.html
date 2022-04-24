@@ -1,10 +1,18 @@
 <h1>Home</h1>
 
-<div>
-  <ul>
-    <li *ngFor="let page of currentPages">
-      <span>{{page.id}}: </span>
+<div *ngIf="(currentPage$ | async) as page; else loading">
+
+  <div *ngIf="page.id">
+    <span>{{page.id}}: </span>
       <span>{{page.name}}</span>
-    </li>
-  </ul>
+  </div>
+
+  <div *ngIf="!(page | keyvalue).length">
+    <app-not-found></app-not-found>
+  </div>
+
 </div>
+
+<ng-template #loading>
+  <div>LOADING...</div>
+</ng-template>
